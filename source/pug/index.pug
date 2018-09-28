@@ -13,7 +13,7 @@ html(lang = "ru")
     body
         header(class = "main-header")
             div(class = "main-header__wrapper")
-                img(class = "main-header__logo", src = "img/logo.svg")
+                img(class = "main-header__logo", src = "img/logo.svg", alt = "Логотип")
                 nav(class = "main-header__navigation navigation")
                     ul(class = "navigation__list")
                         li(class = "navigation__item")
@@ -42,26 +42,6 @@ html(lang = "ru")
                         p(class = "sorting__price sorting__price--active") Цене
                         p(class = "sorting__rooms") Комнатам
                     ul(class = "search__list")
-                        li(class = "search__item room room--reserved")
-                            button(class = "room__favourite")
-                            ul(class = "room__special-promotion")
-                                li(class = "room__special-promotion-item room__special-promotion-item--discount")
-                                    p(class = "room__discount") -17%
-                                li(class = "room__special-promotion-item room__special-promotion-item--shock")
-                                    p(class = "room__shock") Шок цена!
-                            div(class = "room__wrapper")
-                                img(class = "room__image", src = "img/rooms/room-0-44.png", width = "213", height = "191", alt = "План квартиры")
-                                h3(class = "room__header") Студия №44
-                                div(class = "room__properties")
-                                    p(class = "room__furnish") без отделки
-                                    div(class = "room__area")
-                                        p(class = "room__area-square") #[span(class = "room__area-count") 28] м#[sup 2]
-                                        p(class = "room__area-content") площадь
-                                    div(class = "room__floor")
-                                        p(class = "room__floor-count") 12/14
-                                        p(class = "room__floor-content") этаж
-                                p(class = "room__price") 1 900 000 руб.
-                            p(class = "room__status") Забронировано
                     button(class = "search__more") Показать еще 20
                 form(class = "main-content__form subscribe")
                     div(class = "subscribe__wrapper")
@@ -70,8 +50,29 @@ html(lang = "ru")
                     div(class = "subscribe__email")
                         input(class = "subscribe__input", type = "email", placeholder = "E-mail", id = "userEmail")
                         button(class = "subscribe__button", type = "submit") Подписаться
-                        label(class = "subscribe__news")
+                        label(class = "subscribe__news") подписаться на новости
                             input(class = "visually-hidden", type = "checkbox", id = "userNewsletter", checked)
                             span(class = "subscribe__checkbox", tabindex = "0")
-                            p(class = "subscribe__news-info") подписаться на новости
-            
+        ul(id = "#card-list-template", style = "display:none")
+            li(class = "search__item room")
+                button(class = "room__favourite")
+                ul(class = "room__special-promotion")
+                    li(class = "room__special-promotion-item room__special-promotion-item--discount")
+                        p(class = "room__discount")
+                    li(class = "room__special-promotion-item room__special-promotion-item--shock")
+                        p(class = "room__shock") Шок цена!
+                div(class = "room__wrapper")
+                    div(class = "room__image-block")
+                        img(class = "room__image", alt = "План квартиры")
+                    h3(class = "room__header") Студия №44
+                    div(class = "room__properties")
+                        p(class = "room__furnish") без отделки
+                        div(class = "room__area")
+                            p(class = "room__area-square") #[span(class = "room__area-count") 28] м#[sup 2]
+                            p(class = "room__area-content") площадь
+                        div(class = "room__floor")
+                            p(class = "room__floor-count") 12/14
+                            p(class = "room__floor-content") этаж
+                    p(class = "room__price") 1 900 000 руб.
+                p(class = "room__status") Забронировано
+        script(src = "js/script.js")
