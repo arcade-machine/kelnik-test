@@ -1,0 +1,69 @@
+doctype html
+
+html(lang = "ru")
+    head
+        meta(charset = "utf-8")
+        meta(name = "viewport", content = "width=device-width,initial-scale=1")
+        meta(name = "description", content = "Тестовое задание, KELNIK")
+
+        title Тестовое задание, KELNIK
+
+        link(type = "text/css", rel = "stylesheet", href = "css/normalize.css")
+        link(type = "text/css", rel = "stylesheet", href = "css/styles.min.css")
+    body
+        header(class = "main-header")
+            div(class = "main-header__wrapper")
+                img(class = "main-header__logo")
+                nav(class = "main-header__navigation navigation")
+                    ul(class = "navigation__list")
+                        li(class = "navigation__item")
+                            a(class = "navigation__link", href = "#") Объекты
+                        li(class = "navigation__item")
+                            a(class = "navigation__link", href = "#") Компания
+                        li(class = "navigation__item")
+                            a(class = "navigation__link", href = "#") Как купить
+                        li(class = "navigation__item")
+                            a(class = "navigation__link", href = "#") Агентам
+                        li(class = "navigation__item")
+                            a(class = "navigation__link", href = "#") Регионам
+                        li(class = "navigation__item")
+                            a(class = "navigation__link", href = "#") Акции
+                        li(class = "navigation__item")
+                            a(class = "navigation__link", href = "#") Контакты
+                a(class = "main-header__phone", href = "tel:8888888898") 8 888 88 88 98 #span[Звони скорее!]
+        main(class = "main-content")
+            div(class = "main-content__wrapper")
+                h2(class = "main-content__header") Найдено 666 квартир
+                section(class = "main-content__search search")
+                    section(class = "search__sorting sorting")
+                        p(class = "sorting__type") Сортировать по:
+                        p(class = "sorting__price") Цене
+                        p(class = "sorting__rooms") Комнатам
+                    ul(class = "search__list")
+                        li(class = "search__item room")
+                            ul(class = "room__special-promotion")
+                                li(class = "room__special-promotion-item room__special-promotion-item--discount")
+                                    p(class = "room__discount")
+                                li(class = "room__special-promotion-item room__special-promotion-item--shock")
+                                    p(class = "room__shock") Шок цена!
+                            div(class = "room__wrapper")
+                                img(class = "room__image")
+                                h3(class = "room__header")
+                                div(class = "room__properties")
+                                    p(class = "room__furnish")
+                                    p(class = "room__area") м2 площадь
+                                    p(class = "room__floor") этаж
+                                p(class = "room__price")
+                            p(class = "room__status")
+                    button(class = "search__more") Показать еще 20
+                form(class = "main-content__form subscribe")
+                    div(class = "subscribe__wrapper")
+                        h3(class = "subscribe__header") Успей купить!
+                        p(class = "subscribe__info") Подпишись и успей словить все акции
+                    div(class = "subscribe__email")
+                        input(class = "subscribe__input", type = "email", placeholder = "E-mail", id = "userEmail")
+                        legend(class = "subscribe__news")
+                            input(class = "subscribe__checkbox", type = "checkbox", id = "userNewsteller")
+                            p(class = "subscribe__news-info") Подписаться на новости
+                    button(class = "subscribe__button", type = "submit") Подписаться        
+            
