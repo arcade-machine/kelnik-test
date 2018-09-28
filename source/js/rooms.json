@@ -1,6 +1,7 @@
 [
     {
         "roomImage": "img/",
+        "favourite": true,
         "roomHeader": "Студия №44",
         "roomCount": "0",
         "roomFurnish": "без отделки",
@@ -14,6 +15,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №666",
         "roomCount": "1",
         "roomFurnish": "базовая отделка",
@@ -27,6 +29,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": true,
         "roomHeader": "Двухкомнатная №567",
         "roomCount": "2",
         "roomFurnish": "черновая отделка",
@@ -40,6 +43,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Трехкомнатная №45",
         "roomCount": "3",
         "roomFurnish": "без отделки",
@@ -54,6 +58,7 @@
     {
         "roomImage": "img/",
         "roomHeader": "Студия №25",
+        "favourite": true,
         "roomCount": "0",
         "roomFurnish": "черновая отделка",
         "roomArea": "18",
@@ -66,6 +71,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Четырехкомнатная №259",
         "roomCount": "4",
         "roomFurnish": "черновая отделка",
@@ -79,6 +85,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Четырехкомнатная №56",
         "roomCount": "4",
         "roomFurnish": "без отделки",
@@ -92,6 +99,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Трехкомнатная №46",
         "roomCount": "3",
         "roomFurnish": "черновая отделка",
@@ -105,6 +113,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №2",
         "roomCount": "1",
         "roomFurnish": "черновая отделка",
@@ -118,6 +127,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Студия №12",
         "roomCount": "0",
         "roomFurnish": "черновая отделка",
@@ -131,6 +141,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №8",
         "roomCount": "1",
         "roomFurnish": "черновая отделка",
@@ -144,6 +155,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Двухкомнатная №23",
         "roomCount": "2",
         "roomFurnish": "базовая отделка",
@@ -158,6 +170,7 @@
     -----------------------
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №56",
         "roomCount": "1",
         "roomFurnish": "черновая отделка",
@@ -171,6 +184,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Студия №37",
         "roomCount": "0",
         "roomFurnish": "базовая отделка",
@@ -184,6 +198,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Студия №49",
         "roomCount": "0",
         "roomFurnish": "базовая отделка",
@@ -197,6 +212,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Четырехкомнатная №259",
         "roomCount": "4",
         "roomFurnish": "чистовая отделка",
@@ -210,6 +226,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Трехкомнатная №123",
         "roomCount": "3",
         "roomFurnish": "чистовая отделка",
@@ -223,6 +240,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Двухкомнатная №257",
         "roomCount": "2",
         "roomFurnish": "черновая отделка",
@@ -236,6 +254,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Четырехкомнатная №594",
         "roomCount": "4",
         "roomFurnish": "без отделки",
@@ -249,6 +268,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №600",
         "roomCount": "1",
         "roomFurnish": "базовая отделка",
@@ -262,6 +282,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Студия №630",
         "roomCount": "0",
         "roomFurnish": "без отделки",
@@ -275,6 +296,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Двухкомнатная №567",
         "roomCount": "2",
         "roomFurnish": "черновая отделка",
@@ -288,6 +310,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №85",
         "roomCount": "1",
         "roomFurnish": "черновая отделка",
@@ -301,6 +324,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №96",
         "roomCount": "1",
         "roomFurnish": "черновая отделка",
@@ -314,6 +338,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №111",
         "roomCount": "1",
         "roomFurnish": "черновая отделка",
@@ -327,6 +352,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №125",
         "roomCount": "1",
         "roomFurnish": "черновая отделка",
@@ -340,6 +366,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Однокомнатная №154",
         "roomCount": "1",
         "roomFurnish": "черновая отделка",
@@ -353,6 +380,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Студия №95",
         "roomCount": "0",
         "roomFurnish": "базовая отделка",
@@ -366,6 +394,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Студия №154",
         "roomCount": "0",
         "roomFurnish": "базовая отделка",
@@ -379,6 +408,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Студия №547",
         "roomCount": "0",
         "roomFurnish": "базовая отделка",
@@ -392,6 +422,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Студия №489",
         "roomCount": "0",
         "roomFurnish": "базовая отделка",
@@ -405,6 +436,7 @@
     },
     {
         "roomImage": "img/",
+        "favourite": false,
         "roomHeader": "Студия №607",
         "roomCount": "0",
         "roomFurnish": "базовая отделка",

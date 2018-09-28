@@ -1,0 +1,431 @@
+@font-face {
+  font-family: "OpenSans Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans SemiBold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.woff2") format("woff2");
+  font-display: swap;
+}
+.visually-hidden {
+  display: none;
+}
+.main-header {
+  background-color: #002f2f;
+}
+.main-header__wrapper {
+  max-width: 1814px;
+  padding: 18px 107px 18px 54px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.main-header__phone {
+  text-decoration: none;
+}
+.main-header__number {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 32px;
+  color: #fefefe;
+}
+.main-header__call {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 20px;
+  color: #fefefe;
+}
+.navigation__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+.navigation__item {
+  margin-right: 50px;
+}
+.navigation__item:last-child {
+  margin-right: 0;
+}
+.navigation__link {
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 24px;
+  color: #fefefe;
+  text-decoration: none;
+}
+.main-content {
+  background-color: #faf9ef;
+}
+.main-content__wrapper {
+  width: 100%;
+  max-width: 1388px;
+  padding: 65px 54px 100px 54px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.main-content__header {
+  padding-left: 170px;
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #002f2f;
+}
+.search {
+  width: 100%;
+  padding: 25px 107px 75px 107px;
+  margin-bottom: 70px;
+  background-color: #fffefd;
+  box-sizing: border-box;
+}
+.search__list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  list-style: none;
+}
+.search__more {
+  width: 50%;
+  min-height: 72px;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "OpenSans SemiBold", "Open Sans", serif;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  background-color: #046380;
+  display: block;
+  cursor: pointer;
+}
+.sorting {
+  margin-bottom: 35px;
+  display: flex;
+}
+.sorting__type {
+  margin: 0;
+  margin-right: 10px;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 14px;
+  color: #002f2f;
+  opacity: 0.7;
+}
+.sorting__price {
+  margin: 0;
+  margin-right: 18px;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 14px;
+  color: #002f2f;
+  opacity: 0.7;
+}
+.sorting__price--active {
+  border-bottom: 1px dashed #849cb2;
+}
+.sorting__rooms {
+  margin: 0;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 14px;
+  color: #002f2f;
+  opacity: 0.7;
+}
+.sorting__rooms--active {
+  border-bottom: 1px dashed #849cb2;
+}
+.room {
+  width: 30%;
+  padding-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  position: relative;
+}
+.room--reserved {
+  border: 1px solid #a7a37e;
+}
+.room--reserved .room__status {
+  background-color: #a7a37e;
+}
+.room--free {
+  border: 1px solid #002f2f;
+}
+.room--free .room__status {
+  background-color: #002f2f;
+}
+.room--sold {
+  border: 1px solid #a1a1a1;
+}
+.room--sold .room__status {
+  background-color: #a1a1a1;
+}
+.room--discount .room__special-promotion-item--discount {
+  opacity: 1;
+  position: relative;
+}
+.room--shock .room__special-promotion-item--shock {
+  opacity: 1;
+  position: relative;
+}
+.room--favourite .room__favourite {
+  background-image: url("../img/star-filled.png");
+}
+.room__special-promotion {
+  min-height: 18px;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.room__special-promotion-item {
+  padding: 0 4px;
+  margin-right: 20px;
+  background-color: #f44;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.room__special-promotion-item:last-child {
+  margin-right: 0;
+}
+.room__discount {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans SemiBold", "Open Sans", serif;
+  font-size: 12px;
+  color: #fff;
+}
+.room__shock {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans SemiBold", "Open Sans", serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.room__wrapper {
+  width: 100%;
+  padding: 0 16%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.room__image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+.room__header {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 45px;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #002f2f;
+}
+.room__properties {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.room__furnish {
+  width: 34%;
+  padding-left: 10px;
+  margin: 0;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 16px;
+  color: #046380;
+  position: relative;
+  box-sizing: border-box;
+}
+.room__furnish::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #046380;
+}
+.room__area {
+  width: 27%;
+}
+.room__area-square {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1px;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 18px;
+  color: #313639;
+}
+.room__area-content {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 13px;
+  color: #313639;
+}
+.room__floor {
+  width: 23%;
+}
+.room__floor-count {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1px;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 18px;
+  color: #313639;
+}
+.room__floor-content {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 13px;
+  color: #313639;
+}
+.room__price {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "OpenSans SemiBold", "Open Sans", serif;
+  font-size: 24px;
+  color: #313639;
+}
+.room__status {
+  width: 100%;
+  min-height: 36px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "OpenSans SemiBold", "Open Sans", serif;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.room__favourite {
+  width: 19px;
+  height: 18px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/star.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.subscribe {
+  padding: 45px 54px;
+  display: flex;
+  border-radius: 5px;
+  background-color: #046380;
+}
+.subscribe__wrapper {
+  margin-right: 180px;
+}
+.subscribe__header {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "OpenSans SemiBold", "Open Sans", serif;
+  font-size: 34px;
+  color: #fff;
+}
+.subscribe__info {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans Bold", "Open Sans", serif;
+  font-size: 18px;
+  color: #fff;
+}
+.subscribe__email {
+  width: 50%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.subscribe__input {
+  width: 54%;
+  min-height: 47px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 16px;
+  color: #046380;
+}
+.subscribe__input:placeholder {
+  color: #046380;
+}
+.subscribe__button {
+  width: 36%;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  background-color: #a7a37e;
+  cursor: pointer;
+}
+.subscribe__news {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.subscribe__checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 3px;
+  background-color: #fff;
+  position: relative;
+}
+#userNewsletter:checked ~ .subscribe__checkbox::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+.subscribe__news-info {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans Regular", "Open Sans", serif;
+  font-size: 18px;
+  color: #fff;
+}

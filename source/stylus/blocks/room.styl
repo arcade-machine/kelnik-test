@@ -1,0 +1,196 @@
+.room
+  width 30%
+  padding-top 15px
+  border-radius 5px
+  border 1px solid #000000
+  box-sizing border-box
+  position relative
+
+  &--reserved
+    border 1px solid #a7a37e
+
+    & .room__status
+      background-color #a7a37e
+
+  &--free
+    border 1px solid #002f2f
+
+    & .room__status
+      background-color #002f2f
+
+  &--sold
+    border 1px solid #a1a1a1
+
+    & .room__status
+      background-color #a1a1a1
+
+  &--discount .room__special-promotion-item--discount
+    opacity 1
+    position relative
+
+  &--shock .room__special-promotion-item--shock
+    opacity 1
+    position relative
+
+  &--favourite .room__favourite
+    background-image url("../img/star-filled.png")
+
+.room__special-promotion
+  min-height 18px
+  padding-left 20px
+  padding-right 15px
+  margin 0
+  list-style none
+  display flex
+
+.room__special-promotion-item
+  padding 0 4px
+  margin-right 20px
+  background-color #ff4444
+  border-radius 5px
+  display flex
+  justify-content center
+  align-items center
+  opacity 0
+  position absolute
+  top 0
+  left 0
+
+  &:last-child
+    margin-right 0
+
+.room__discount
+  padding 0
+  margin 0
+  font-family "OpenSans SemiBold", "Open Sans", serif
+  font-size 12px
+  color #ffffff
+
+.room__shock
+  padding 0
+  margin 0
+  font-family "OpenSans SemiBold", "Open Sans", serif
+  font-size 12px
+  color #ffffff
+  text-transform uppercase
+
+.room__wrapper
+  width 100%
+  padding 0 16%
+  margin 0 auto
+  display flex
+  flex-direction column
+  box-sizing border-box
+
+.room__image
+  max-width 100%
+  height auto
+  margin-bottom 40px
+
+.room__header
+  padding 0
+  margin 0
+  margin-bottom 45px
+  font-family "OpenSans Regular", "Open Sans", serif
+  font-size 24px
+  font-weight 600
+  color #002f2f
+
+.room__properties
+  margin-bottom 40px
+  display flex
+  justify-content space-between
+
+.room__furnish
+  width 34%
+  padding-left 10px
+  margin 0
+  font-family "OpenSans Regular", "Open Sans", serif
+  font-size 16px
+  color #046380
+  position relative
+  box-sizing border-box
+
+  &::before
+    content ""
+    width 3px
+    height 100%
+    position absolute
+    top 0
+    left 0
+    background-color #046380
+
+.room__area
+  width 27%
+
+.room__area-square
+  padding 0
+  margin 0
+  margin-bottom: 1px;
+  font-family "OpenSans Regular", "Open Sans", serif
+  font-size 18px
+  color #313639
+
+
+.room__area-content
+  padding 0
+  margin 0
+  font-family "OpenSans Regular", "Open Sans", serif
+  font-size 13px
+  color #313639
+
+.room__floor
+  width 23%
+
+.room__floor-count
+  padding 0
+  margin 0
+  margin-bottom: 1px;
+  font-family "OpenSans Regular", "Open Sans", serif
+  font-size 18px
+  color #313639
+
+.room__floor-content
+  padding 0
+  margin 0
+  font-family "OpenSans Regular", "Open Sans", serif
+  font-size 13px
+  color #313639
+
+
+.room__price
+  padding 0
+  margin 0
+  margin-bottom 20px
+  font-family "OpenSans SemiBold", "Open Sans", serif
+  font-size 24px
+  color #313639
+
+.room__status
+  width 100%
+  min-height 36px
+  padding 0
+  margin 0
+  display flex
+  align-items center
+  justify-content center
+  font-family "OpenSans SemiBold", "Open Sans", serif
+  font-size 12px
+  letter-spacing 0.06em
+  color #ffffff
+  text-transform uppercase
+
+.room__favourite
+  width 19px
+  height 18px
+  padding 0
+  margin 0
+  border none
+  background-color transparent
+  background-image url("../img/star.png")
+  background-repeat no-repeat
+  background-size cover
+  cursor pointer
+  position absolute
+  top 10px
+  right 10px

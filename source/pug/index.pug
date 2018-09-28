@@ -13,7 +13,7 @@ html(lang = "ru")
     body
         header(class = "main-header")
             div(class = "main-header__wrapper")
-                img(class = "main-header__logo")
+                img(class = "main-header__logo", src = "img/logo.svg")
                 nav(class = "main-header__navigation navigation")
                     ul(class = "navigation__list")
                         li(class = "navigation__item")
@@ -30,31 +30,38 @@ html(lang = "ru")
                             a(class = "navigation__link", href = "#") Акции
                         li(class = "navigation__item")
                             a(class = "navigation__link", href = "#") Контакты
-                a(class = "main-header__phone", href = "tel:8888888898") 8 888 88 88 98 #span[Звони скорее!]
+                a(class = "main-header__phone", href = "tel:8888888898")
+                    p(class = "main-header__number") 8 888 88 88 98
+                    p(class = "main-header__call") Звони скорее!
         main(class = "main-content")
             div(class = "main-content__wrapper")
                 h2(class = "main-content__header") Найдено 666 квартир
                 section(class = "main-content__search search")
                     section(class = "search__sorting sorting")
                         p(class = "sorting__type") Сортировать по:
-                        p(class = "sorting__price") Цене
+                        p(class = "sorting__price sorting__price--active") Цене
                         p(class = "sorting__rooms") Комнатам
                     ul(class = "search__list")
-                        li(class = "search__item room")
+                        li(class = "search__item room room--reserved")
+                            button(class = "room__favourite")
                             ul(class = "room__special-promotion")
                                 li(class = "room__special-promotion-item room__special-promotion-item--discount")
-                                    p(class = "room__discount")
+                                    p(class = "room__discount") -17%
                                 li(class = "room__special-promotion-item room__special-promotion-item--shock")
                                     p(class = "room__shock") Шок цена!
                             div(class = "room__wrapper")
-                                img(class = "room__image")
-                                h3(class = "room__header")
+                                img(class = "room__image", src = "img/rooms/room-0-44.png", width = "213", height = "191", alt = "План квартиры")
+                                h3(class = "room__header") Студия №44
                                 div(class = "room__properties")
-                                    p(class = "room__furnish")
-                                    p(class = "room__area") м2 площадь
-                                    p(class = "room__floor") этаж
-                                p(class = "room__price")
-                            p(class = "room__status")
+                                    p(class = "room__furnish") без отделки
+                                    div(class = "room__area")
+                                        p(class = "room__area-square") #[span(class = "room__area-count") 28] м#[sup 2]
+                                        p(class = "room__area-content") площадь
+                                    div(class = "room__floor")
+                                        p(class = "room__floor-count") 12/14
+                                        p(class = "room__floor-content") этаж
+                                p(class = "room__price") 1 900 000 руб.
+                            p(class = "room__status") Забронировано
                     button(class = "search__more") Показать еще 20
                 form(class = "main-content__form subscribe")
                     div(class = "subscribe__wrapper")
@@ -62,8 +69,9 @@ html(lang = "ru")
                         p(class = "subscribe__info") Подпишись и успей словить все акции
                     div(class = "subscribe__email")
                         input(class = "subscribe__input", type = "email", placeholder = "E-mail", id = "userEmail")
-                        legend(class = "subscribe__news")
-                            input(class = "subscribe__checkbox", type = "checkbox", id = "userNewsteller")
-                            p(class = "subscribe__news-info") Подписаться на новости
-                    button(class = "subscribe__button", type = "submit") Подписаться        
+                        button(class = "subscribe__button", type = "submit") Подписаться
+                        label(class = "subscribe__news")
+                            input(class = "visually-hidden", type = "checkbox", id = "userNewsletter", checked)
+                            span(class = "subscribe__checkbox", tabindex = "0")
+                            p(class = "subscribe__news-info") подписаться на новости
             
